@@ -1,6 +1,6 @@
 ## Restfull API voor een fictief bedrijf:
 
-#Intressante dingen om naar te kijken:
+# Intressante dingen om naar te kijken:
 
 VehicleController  
 VehicleService  
