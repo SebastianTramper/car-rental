@@ -1,0 +1,36 @@
+version: "3.3"
+services:
+  mariadb:
+    image: mariadb:10.6.4
+#    hostname: mariadb
+#    volumes:
+#      - mariadb_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=springbootroot
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_DATABASE=avans_carrental
+      - MYSQL_USER=springboot
+      - MYSQL_PASSWORD=springboot
+    ports:
+      - "33067:3306"
+    restart: always
+#  springboot:
+#    image: springio/gs-spring-boot-docker
+#    volumes:
+#      - springboot_data:/var/lib/springboot
+#    ports:
+#      - 8082:8082
+#    restart: unless-stopped
+#    build:
+#      context: ./
+#      dockerfile: DockerFile
+#    environment:
+#      - SPRING_DATASOURCE_URL=jdbc:mysql://mariadb:3307/avans_carrental?autoReconnect=true&useSSL=false
+#      - SPRING_DATASOURCE_USERNAME=springboot
+#      - SPRING_DATASOURCE_PASSWORD=
+#    depends_on:
+#      - mariadb
+
+#volumes:
+#  mariadb_data:
+#  springboot_data:
