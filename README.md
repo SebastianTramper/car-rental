@@ -1,9 +1,11 @@
-# Docker
-## First time running container:
-you need to run an extra command for running the container for the first time. Use the following command:
-`docker-compose up --build -d` wait till docker is finished with building the container.
+Een restfull API:
 
-## run and stop container
-run `docker-compose up -d` to pull and start docker container.
+Intressante dingen om naar te kijken:
 
-run `docker-compose stop` to stop the docker container.
+VehicleController
+VehicleService
+
+
+Unit test in src/java/restapi
+VehicleControllerTest
+UserControllerTest
